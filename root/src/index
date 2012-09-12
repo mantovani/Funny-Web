@@ -1,4 +1,5 @@
 <center>
 	<h1>link => <a href="[% c.uri_for("/", image_rand.title) %]">[% image_rand.title %]</a></h1>
 	<img src="static/funny_images/[% image_rand.image %]"></img>
+	<h1> <a href="/">Click and get more!!!</a></h1>
 </center>

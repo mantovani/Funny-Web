@@ -1,5 +1,5 @@
 <!-- BEGIN site/header -->
 <center><h1 class="title">
-	<a href="/index">[% template.title or site.title %]</a>
+	<a href="/">[% template.title or site.title %]</a>
 </h1></center>
 <!-- END site/header -->

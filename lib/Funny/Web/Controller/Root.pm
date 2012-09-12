@@ -27,9 +27,10 @@ sub root : Chained('/') : PathPart('') : CaptureArgs(0) {
     $c->stash->{image_model} = $c->model('RandomImage');
 }
 
-sub index : Chained('root') : PathPart('index') : Args(0) {
+
+sub index :Path :Args(0)  {
     my ( $self, $c ) = @_;
-    $c->stash->{image_rand} = $c->stash->{image_model}->random_image;
+    $c->stash->{image_rand} = $c->model('RandomImage')->random_image;
 }
 
 sub image : Chained('root') : PathPart('') : Args(1) {
